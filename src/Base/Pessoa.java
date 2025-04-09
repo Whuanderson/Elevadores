@@ -2,22 +2,24 @@ package Base;
 
 public class Pessoa {
 
-    int id;
-    int andarOrigem;
-    int andarDestino;
-    int tempoChegda;
-    boolean idoso;
-    boolean cadeirante;
-    Public Pessoa prox;
+    public int id;
+    public int andarOrigem;
+    public int andarDestino;
+    public int tempoChegada;
+    public boolean idoso;
+    public boolean cadeirante;
+    public Pessoa prox;
 
 
-    public Pessoa(int id, int andarOrigem, int andarDestino, int tempoChegda, boolean idoso, boolean cadeirante, Pessoa prox) {
+    public Pessoa(int id, int andarOrigem, int andarDestino, int tempoChegada, boolean idoso, boolean cadeirante, Pessoa prox) {
         this.id = id;
         this.andarOrigem = andarOrigem;
         this.andarDestino = andarDestino;
-        this.tempoChegda = tempoChegda;
+        this.tempoChegada = tempoChegada;
         this.idoso = idoso;
         this.cadeirante = cadeirante;
-        this.proximo = null;
+        this.prox = prox;
     }
+
+
 }
