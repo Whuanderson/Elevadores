@@ -14,18 +14,12 @@ public class Main {
         fila.adicionar(3, 1, 4, 25, true, true);
         fila.adicionar(7, 1, 4, 25, true, true);
 
-        // Imprimindo a fila
-        Pessoa atual = fila.inicio;
-        System.out.println("Fila de Espera:");
+        fila.imprimir();
 
-        while (atual != null) {
-            System.out.println("ID: " + atual.id +
-                    ", Origem: " + atual.andarOrigem +
-                    ", Destino: " + atual.andarDestino +
-                    ", Tempo: " + atual.tempoChegada +
-                    ", Idoso: " + atual.idoso +
-                    ", Cadeirante: " + atual.cadeirante);
-            atual = atual.prox;
-        }
+        fila.retirar(1);
+
+        fila.imprimir();
+
+
     }
 }
