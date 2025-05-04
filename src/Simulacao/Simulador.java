@@ -18,7 +18,7 @@ public class Simulador {
         this.andares = teclado.nextInt();
         System.out.print("Digite a quantidade de elevadores: ");
         int elevadores = teclado.nextInt();
-        System.out.print("Digite a quantidade de pesoas: ");
+        System.out.print("Digite a quantidade de pessoas: ");
         int pessoas = teclado.nextInt();
         this.fila = gerarPessoal(pessoas);
         Predio v1 = new Predio(andares, elevadores);
