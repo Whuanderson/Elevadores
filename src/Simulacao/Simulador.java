@@ -36,7 +36,18 @@ public class Simulador {
 
 
         for (int i = 0; i < pessoas; i++) {
-            fila.adicionar(i, random.nextInt(this.andares), 0, random.nextInt(50), false, false);
+            int andarOrigem = random.nextInt(this.andares);
+            int andarDestino;
+            do {
+                andarDestino = random.nextInt(this.andares);
+            } while (andarDestino == andarOrigem);
+
+            int tempoChegada = andarDestino - andarOrigem;
+
+            boolean idoso = random.nextInt(100) < 30;
+            boolean cadeirante = random.nextInt(100) < 10;
+
+            fila.adicionar(i, andarOrigem, andarDestino, tempoChegada, idoso, cadeirante);
         }
 
         return fila;

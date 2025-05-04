@@ -29,7 +29,7 @@ public class Predio {
         this.elevadores = elevadores;
     }
 
-    public void imprimirPredio(){
+    public void imprimirPredio() {
         System.out.println("Andares: " + andares);
         System.out.println("Elevadores: " + elevadores);
     }
